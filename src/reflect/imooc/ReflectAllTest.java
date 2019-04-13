@@ -1,6 +1,5 @@
 package reflect.imooc;
 
-import com.jia.vo.User;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -36,7 +35,7 @@ public class ReflectAllTest {
             Field[] declaredFields = clazz.getDeclaredFields();
             for (Field declaredField : declaredFields) {
                 Class<?> type = declaredField.getType();
-                System.out.println("    "+type.getSimpleName()+"    "+declaredField.getName());
+                System.out.println("    " + type.getSimpleName() + "    " + declaredField.getName());
                 System.out.println();
 
             }
@@ -49,13 +48,9 @@ public class ReflectAllTest {
         }
 
 
-
-
-
     }
 
     public static void main(String[] args) {
-        User user=new User();
-        ReflectAllTest.getAllMessage(user);
+
     }
 }

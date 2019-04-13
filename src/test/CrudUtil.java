@@ -79,7 +79,7 @@ public class CrudUtil<T> {
         Field userName = userClass.getDeclaredField("userName");
         userName.setAccessible(true);
         userName.set(user,"11111");
-        System.out.println(user.getUserName());
+       // System.out.println(user.getUserName());
 
         System.out.println(userClass.getInterfaces().length);
 
